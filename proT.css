@@ -169,12 +169,33 @@ body {
 .videosnip {
   margin-top: 10rem;
   margin-left: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: end;
   height: 40%;
   width: 90%;
-  border-radius: 20px;
-  background-color: red;
+  border-radius: 30px;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0)
+  );
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0.37);
+  border: 1px solid rgba(255, 255, 255, 0.18);
 }
-
+video {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+.close {
+  position: absolute;
+  font-size: 3rem;
+  color: var(--foncolor);
+}
 /* video container end */
 
 .bio h3 {
