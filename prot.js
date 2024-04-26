@@ -99,6 +99,13 @@ function setInitial() {
     "<p>" + users[curr].name + " <span>Age</span></p> ";
   select(".bio p").textContent = users[curr].bio;
   select(".vid").src = users[curr].video;
+
+  //gsap animation on footerContainer
+  gsap.from(".ltext,.name,.interest,.bio", {
+    y: 100,
+    duration: 0.5,
+  });
+  //animation on background images
 }
 setInitial();
 

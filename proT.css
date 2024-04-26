@@ -236,7 +236,7 @@ video {
 .like,
 .notlike {
   border: 0;
-  outline: @border; /* Assuming @border is defined elsewhere */
+  outline: border; /* Assuming @border is defined elsewhere */
   padding: 1.5rem 2rem;
   font-family: monospace;
   box-shadow: 0px 5px 10px rgba(darken(dodgerblue, 40%));
